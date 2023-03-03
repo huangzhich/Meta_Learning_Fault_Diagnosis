@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 from torch.nn import init
 import torch.optim as optim
-from Bearing_Diff_Condi.backbone import FeatureExtractor_2, FeatureExtractor_4, Flatten
+from backbone import FeatureExtractor_2, FeatureExtractor_4, Flatten
 
 class Baseline_FinetuneLast(nn.Module):
     # basic CNN classify model, with two classifiers in it. Used for source task and target task with different num of types

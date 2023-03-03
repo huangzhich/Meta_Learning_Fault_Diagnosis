@@ -6,11 +6,12 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.backends import cudnn
-from Bearing_Diff_Condi.Dataload import SimpleDataLoader, MetaDataLoader
-from Bearing_Diff_Condi.models import Baseline_FinetuneLast, Baseline_FinetuneWhole, Baseline_FeatureKnn
-from Bearing_Diff_Condi.models import MatchingNetwork, MatchingNetwork_feat_space, MatchingNetwork_pretrain
-from Bearing_Diff_Condi.options import parse_args
-from Bearing_Diff_Condi.report import Tap, create_result_subdir, export_sources
+from Dataload import SimpleDataLoader, MetaDataLoader
+from models import Baseline_FinetuneLast, Baseline_FinetuneWhole, Baseline_FeatureKnn
+from models import MatchingNetwork, MatchingNetwork_feat_space, MatchingNetwork_pretrain
+from options import parse_args
+
+from report import Tap, create_result_subdir, export_sources
 
 
 if __name__ == "__main__":
